@@ -1,0 +1,203 @@
+
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Fenghe Xu}}\\
+  Incoming Software Engineer at Jump Trading Shanghai & LinkedIn: \href{https://www.linkedin.com/in/bill0412/}{bill0412} \\
+  \href{https://kickstart.best/}{Blog: kickstart.best} & Email: \href{mailto:}{jxphxufh@gmail.com} \\
+  \href{https://github.com/Bill0412}{Github: ~~github.com/Bill0412} & Mobile:~~~+86-152-5737-8682 \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{~~Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Zhejiang University}{Hangzhou China}
+      {Chemical Engineering}{July 2017 - June 2022}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Operating Systems, Fundamentals of Data Structure, Advanced Data Structure and Algorithm Analysis, Database Systems, Discrete Mathematics, Introduction to C, Specialized C Programming, Object Oriented Programming}}}
+    \resumeSubHeadingListEnd
+	    
+\vspace{-5pt}
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Languages}{~~~~~~C++, Python, JavaScript, SQL, Bash, Go}
+	\resumeSubItem{Frameworks}{~~~~ReactJS, AngularJS, Django, Flask, NodeJS}
+	\resumeSubItem{Tools}{~~~~~~~~~~~~~~Docker, GIT, MySQL, MongoDB, SQL Server}
+	\resumeSubItem{Platforms}{~~~~~~~Linux, Gitlab CI/CD, AWS, GCP, Alibaba Cloud}
+	\resumeSubItem{Soft Skills}{~~~~~~~Leadership, Event Management, Writing, Public Speaking, Time Management}
+
+\resumeSubHeadingListEnd
+
+\vspace{-5pt}
+\section{Experience}
+  \resumeSubHeadingListStart
+ \resumeSubheading{NFTGo}{Hangzhou, China}
+{Backend Developer Intern}{Feb. 2022 - Jun. 2022}
+\resumeItemListStart
+    \resumeItem{Project - NFT Wash Trading Detection}
+      {NFT Wash Trading Detection algorithms research and implementation, a basic trading cycle detection demo: https://github.com/Bill0412/nft-wash-trading-detection. Implemented data structures like segment tree and difference array to accelerate range updates and single queries for all cycles during time-series graph traversal.}
+    \resumeItem{Prometheus Monitoring}
+      {Embedding node.js Prometheus instrumentation code into NFTGo backend code, meanwhile deploying a metrics monitor with Prometheus and Grafana. Reading the book Prometheus Up and Running. Writing PromQL to aggregate and monitor NFTGo server metrics like Queries Per Second, Per Request Duration, etc. Integrating Grafana alerts to Lark with Lark Flow.}
+  \resumeItemListEnd
+\vspace{-5pt}
+  \resumeSubheading{JQ Investments}{Shanghai, China}
+{Core System Developer Intern}{Jan. 2022 - Feb. 2022}
+\resumeItemListStart
+    \resumeItem{Trainee}
+      {Participated in the quantitative trading developer training program.}
+  \resumeItemListEnd
+\vspace{-5pt}
+\resumeSubheading{Internet Graphics Group of Microsoft Research Asia}{Beijing, China}
+{Research Developer Intern}{Jul. 2021 - Dec. 2021}
+\resumeItemListStart
+    \resumeItem{Project - 3D Hand Reconstruction}
+      {OpenGL programming for 3D modeling and reconstruction based on 3D hand tracking papers and Google MediaPipe Hands project.}
+      \resumeItem{Project - 3D Scene Reconstruction}
+      {Augmented-Reality app for iOS using SwiftUI, ARKit, RealityKit and SceneKit, with the MVVM design pattern. Integrated C++ graphics algorithms code to Swift SceneKit using SIMD to update meshes through C API, rendering meshes from C allocated memory.}
+  \resumeItemListEnd
+\vspace{-5pt}
+    \resumeSubheading
+		{Zoom Video Communications Inc.}{Hangzhou, China}
+		{ASR(Automatic Speech Recognition) Developer Intern}{Jul. 2020 -  Jul. 2021}
+		\resumeItemListStart
+        \resumeItem{Project - Offline ASR}
+          {Major contributor to Zoom Video Offline Transcription Alpha version, written in C++17. My role concerns C++ multithreaded programming, debugging, Linux file operations, docker encapsulation and CPU/GPU profiling. During this project, read the book C++ Primer.}
+        \resumeItem{Project - Distributive Crawler}
+          {Designer and major contributor to a distributive, horizontally scalable YouTube public domain audio data scraping, wrangling platform for the training of github.com/facebookresearch/flashlight ASR, relying on AWS S3, Transcribe and Lightsail. Used libraries like threading, multiprocessing, asyncio, unittest, peewee, etc. Encapsulated all code in accordance with pep517.}
+        \resumeItem{Project - Model Evaluation Website}{React.js frontend, go backend(encapsulated C code with cgo, used context for postprocess timeout) application for internal demonstration, an application of websocket(RFC 6455). }
+		\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\vspace{-5pt}
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{TCP Duplex Transfer Server and Client}{Designed a general-purpose request handler which can both work as client and server, achieved duplex transfer with TCP protocol.(github.com/JKQJQ/file-transfer, March '22)}
+\vspace{2pt}
+\resumeSubItem{Map Reduce Implementation with Python Multiprocessing}{Implemented a multiprocessing fashion Map Reduce program that counts words in text files. (github.com/Bill0412/map-reduce-multiprocessing, Jan '22)}
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+\section{Licenses and Certifications}
+\resumeSubHeadingListStart
+
+\resumeSubItem{Blockchain Basics}{University at Buffalo and Coursera \href{https://www.coursera.org/account/accomplishments/verify/BP896THDSKU8}{Apr. 2022}}
+\vspace{2pt}
+\resumeSubItem{Shopee Code League 2022 - Finalist}{Shopee Singapore \href{https://www.credly.com/badges/bd861dd8-2b33-4a48-8890-ddee9e55b80d?source=linked_in_profile}{Apr. 2022}}
+\vspace{2pt}
+\resumeSubItem{Decentralized Finance (DeFi) Infrastructure}{Duke University and Coursera \href{https://www.coursera.org/account/accomplishments/verify/N227UR699DGE}{Dec. 2021}}
+\vspace{2pt}
+\resumeSubItem{Introduction to High-Performance and Parallel Computing}{University of Colorado Boulder and Coursera \href{https://www.coursera.org/account/accomplishments/verify/NE4ZQTE7YN9D}{Mar. 2021}}
+\vspace{2pt}
+\resumeSubItem{Introduction to Deep Learning \& Neural Networks with Keras}{IBM and Coursera \href{https://www.coursera.org/account/accomplishments/verify/EQJRJ5TYNUWK}{Sept. 2020}}
+\vspace{2pt}
+\resumeSubItem{Scalable Machine Learning on Big Data using Apache Spark}{IBM and Coursera \href{https://www.coursera.org/account/accomplishments/verify/DA6BEUWXSRF9}{Aug. 2020}}
+\vspace{2pt}
+\resumeSubItem{Machine Learning with Python}{IBM and Coursera \href{https://www.coursera.org/account/accomplishments/verify/XPRTDJJSBB7P}{Feb. 2020}}
+\vspace{2pt}
+\resumeSubItem{Front-End Web UI Frameworks and Tools: Bootstrap 4}{Hong Kong University of Science and Technology and Coursera \href{https://www.coursera.org/account/accomplishments/verify/G37MNLZDG433}{Sept. 2019 }}
+\vspace{2pt}
+\resumeSubItem{Single Page Web Applications with AngularJS}{Johns Hopkins University and Coursera \href{https://www.coursera.org/account/accomplishments/verify/ZLFTEL78M9F3}{Jan. 2019}}
+\vspace{2pt}
+\resumeSubItem{HTML, CSS, and Javascript for Web Developers}{Johns Hopkins University and Coursera \href{https://www.coursera.org/account/accomplishments/verify/ALPXFCUJNBYF}{Jan. 2019}}
+\vspace{2pt}
+\resumeSubItem{Ruby on Rails Web Services and Integration with MongoDB}{Johns Hopkins University and Coursera \href{https://www.coursera.org/account/accomplishments/verify/6K9G42EUJNV4}{Dec. 2018}}
+\vspace{2pt}
+\resumeSubItem{Rails with Active Record and Action Pack}{Johns Hopkins University and Coursera \href{https://www.coursera.org/account/accomplishments/verify/LPG6HQD7AHUZ}{Oct. 2018}}
+\vspace{2pt}
+\resumeSubItem{Ruby on Rails: an Introduction}{Johns Hopkins University and Coursera \href{https://www.coursera.org/account/accomplishments/verify/8W3KJFNVJ4FR}{Sept. 2018}}
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+%-----------Awards-----------------
+\section{Honors and Awards}
+\begin{description}[font=$\bullet$]
+\item {First Prize in Quantitative Trading IT Challenge held by Ubiquant - \href{https://mp.weixin.qq.com/s/Pb1sGtPQJ3c_qveQFbQF2A}{Mar, 2022}}
+\vspace{-5pt}
+
+
+\end{description}
+
+\vspace{-5pt}
+\section{Volunteer Experience}
+  \resumeSubHeadingListStart
+ \resumeSubheading{Impact NW}{Portland, United States}
+{International Volunteer}{Jan. 2018 - Feb. 2018}
+\resumeItemListStart
+    \resumeItem{Social Services}
+    {Assisting the students in the cooking class, making social interactions with low income and socially deprived youth.}
+\resumeSubHeadingListEnd
+
+\end{document}
